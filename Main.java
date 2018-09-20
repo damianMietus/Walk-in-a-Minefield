@@ -3,9 +3,9 @@ import java.util.Random;
 public class Main extends Frame{
 /**
  * @author Damian Mietus
- * 	Completed May 9 2018
  *  Reddit Daily Programmer 
  *  Challenge #340 [Intermediate] Walk in a Minefield
+ *  Completed May 9 2018
  */
 	static String usIn = new String();
 	
