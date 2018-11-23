@@ -8,7 +8,6 @@ public class Main extends Frame{
  *  Completed May 9 2018
  */
 	static String usIn = new String();
-	
 
 @SuppressWarnings("static-access")
 public static void main(String[] args) {
@@ -20,7 +19,6 @@ public static void main(String[] args) {
 	int result = 0;
 	int simulation = 1;
 	char[][] array = new char[13][13];
-	
 		
     while (simulation == 1) {
     	result = 0;
@@ -42,15 +40,11 @@ public static void main(String[] args) {
             usIn = usIn.toUpperCase();
             result = checkUserInput(array, usIn, frame);           
             frame.resultMsg(result);
-            
-
-		    frame.runFunc = 0;		
+		frame.runFunc = 0;		
 	    }
 	    runVal = 0;
     }
-        
-		    
-		    
+       	    
 	}
 	
 	public static char[][] generateMap() {
@@ -88,8 +82,6 @@ public static void main(String[] args) {
 				}				
 			}
 
-					
-			
 			passable = mazeSolver(tempArr);
 		}
 		
@@ -121,22 +113,16 @@ public static void main(String[] args) {
 				} else if (arr[i][j] == '0') {
 					arr[i][j] = '*';
 					key = 1;	
-			    }
-					
+			    }		
 				
 			}
 			key = 0;
-			
-		    	
 		}
 	    return arr;
 	}
 	
-	
     public static boolean mazeSolver(char[][] arr) {
 
-    	
-		
 	    int counter = 0;
 	    Random rand = new Random();
 	    int move = 0;
@@ -333,8 +319,3 @@ public static void main(String[] args) {
     }
 
 }
-
-
-
-
-
